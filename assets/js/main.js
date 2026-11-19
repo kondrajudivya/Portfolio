@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       category: 'AI Video Creation',
       badge: 'AI Creations',
       image: 'assets/images/projects/project-ai1.svg',
+      videoUrl: 'assets/videos/ai-video.mp4',
       desc: 'Developed an automated pipeline using generative AI tools to create photorealistic AI avatars and natural multilingual voice synthesis. Engineered custom system prompts for realistic cadence and gestures.',
       tools: ['HeyGen / D-ID', 'ElevenLabs Voice AI', 'ChatGPT Scripting', 'CapCut Polishing'],
       deliverables: ['Full HD Avatar Video', 'Telugu & English Dual Tracks', 'B-Roll Integration'],
@@ -156,6 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('projectModal');
   const modalClose = document.getElementById('modalClose');
   const modalImg = document.getElementById('modalImg');
+  const modalVideo = document.getElementById('modalVideo');
   const modalTitle = document.getElementById('modalTitle');
   const modalCategory = document.getElementById('modalCategory');
   const modalDesc = document.getElementById('modalDesc');
@@ -170,8 +172,24 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = projectsData[projectId];
 
       if (data && modal) {
-        modalImg.src = data.image;
-        modalImg.alt = data.title;
+        // Toggle Video vs Image
+        if (data.videoUrl && modalVideo) {
+          modalVideo.src = data.videoUrl;
+          modalVideo.style.display = 'block';
+          if (modalImg) modalImg.style.display = 'none';
+        } else {
+          if (modalVideo) {
+            modalVideo.pause();
+            modalVideo.src = '';
+            modalVideo.style.display = 'none';
+          }
+          if (modalImg) {
+            modalImg.src = data.image;
+            modalImg.alt = data.title;
+            modalImg.style.display = 'block';
+          }
+        }
+
         modalTitle.textContent = data.title;
         modalCategory.textContent = data.category;
         modalDesc.textContent = data.desc;
@@ -198,6 +216,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const closeModal = () => {
     if (modal) {
+      if (modalVideo) {
+        modalVideo.pause();
+      }
       modal.classList.remove('active');
       document.body.style.overflow = '';
     }

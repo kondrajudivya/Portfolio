@@ -1335,6 +1335,10 @@ button {
 
 /* Responsive Media Queries */
 @media (max-width: 1024px) {
+  .ai-video-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
   .spotlight-card {
     grid-template-columns: 1fr !important;
     gap: 24px !important;
