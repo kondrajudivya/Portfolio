@@ -35,6 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
       deliverables: ['Full HD Avatar Video', 'Telugu & English Dual Tracks', 'B-Roll Integration'],
       metrics: '10x Faster Production • 80% Cost Reduction'
     },
+    'saanvi-kitchen': {
+      title: "Sanvi Kitchens — Restaurant & WhatsApp Ordering Platform",
+      category: 'Website Design',
+      badge: 'Live Website',
+      image: 'assets/images/projects/project-saanvi.svg',
+      liveUrl: 'https://kondrajudivya.github.io/Saanvi-s-Kitchen/',
+      desc: 'Designed and deployed an authentic South Indian restaurant web experience for Sanvi Kitchens in Madiwala, Bengaluru. Features responsive mobile-first dining menus, instant WhatsApp online ordering routing, specialty dishes showcase (Chicken & Mutton Dum Biryani, Crispy Dosa, Filter Coffee), and interactive Google Maps location integration.',
+      tools: ['HTML5 & Modern CSS3', 'JavaScript', 'WhatsApp API Integration', 'Responsive UI/UX', 'GitHub Pages'],
+      deliverables: ['Live Production Website', 'Direct WhatsApp Ordering', 'Menu & Specialities UI', 'Location & Contact Section'],
+      metrics: '100% Live on GitHub Pages • Mobile Optimized • Direct Instant Ordering'
+    },
     'web-1': {
       title: 'Luxe Studio - Creative Agency Landing Page',
       category: 'Website Design',
@@ -150,6 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalDesc = document.getElementById('modalDesc');
   const modalTools = document.getElementById('modalTools');
   const modalMetrics = document.getElementById('modalMetrics');
+  const modalLiveBtn = document.getElementById('modalLiveBtn');
 
   document.querySelectorAll('.btn-preview-modal').forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -167,6 +179,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Render tool badges
         modalTools.innerHTML = data.tools.map(tool => `<span class="p-tag">${tool}</span>`).join('');
+
+        // Wire up live URL if present
+        if (modalLiveBtn) {
+          if (data.liveUrl) {
+            modalLiveBtn.href = data.liveUrl;
+            modalLiveBtn.style.display = 'inline-flex';
+          } else {
+            modalLiveBtn.style.display = 'none';
+          }
+        }
 
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
