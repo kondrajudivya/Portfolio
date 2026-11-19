@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="webBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="webShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#webBg1)"/>
+
+  <!-- Browser Window Mockup -->
+  <g transform="translate(60, 40)" filter="url(#webShadow)">
+    <rect x="0" y="0" width="680" height="420" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    
+    <!-- Browser Header -->
+    <rect x="0" y="0" width="680" height="42" rx="16" fill="#f8fafc"/>
+    <circle cx="24" cy="21" r="5" fill="#f87171"/>
+    <circle cx="40" cy="21" r="5" fill="#fbbf24"/>
+    <circle cx="56" cy="21" r="5" fill="#34d399"/>
+    
+    <!-- URL search bar -->
+    <rect x="130" y="8" width="420" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="340" y="25" fill="#64748b" font-family="sans-serif" font-size="11" text-anchor="middle">🔒 https://luxestudio-creative.design</text>
+
+    <!-- Webpage Content -->
+    <!-- Nav in page -->
+    <rect x="25" y="60" width="80" height="18" rx="4" fill="#0f172a"/>
+    <circle cx="34" cy="69" r="4" fill="#8b5cf6"/>
+    <text x="44" y="73" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="9">LUXE</text>
+
+    <text x="540" y="73" fill="#475569" font-family="sans-serif" font-size="10">Home</text>
+    <text x="580" y="73" fill="#475569" font-family="sans-serif" font-size="10">Work</text>
+    <text x="615" y="73" fill="#475569" font-family="sans-serif" font-size="10">About</text>
+    <rect x="650" y="60" width="55" height="18" rx="9" fill="#2563eb"/>
+    <text x="677" y="73" fill="#ffffff" font-family="sans-serif" font-weight="600" font-size="9" text-anchor="middle">Book</text>
+
+    <!-- Hero section in mockup -->
+    <rect x="25" y="95" width="360" height="18" rx="4" fill="#f1f5f9"/>
+    <text x="35" y="108" fill="#2563eb" font-family="sans-serif" font-weight="700" font-size="10">NEXT GENERATION CREATIVE STUDIO</text>
+
+    <text x="25" y="145" fill="#0f172a" font-family="sans-serif" font-weight="800" font-size="24">Transforming Brands</text>
+    <text x="25" y="175" fill="#0f172a" font-family="sans-serif" font-weight="800" font-size="24">Into Digital Icons.</text>
+    
+    <text x="25" y="202" fill="#64748b" font-family="sans-serif" font-size="11">Modern aesthetics, smooth responsiveness, and high conversion.</text>
+
+    <rect x="25" y="225" width="110" height="32" rx="16" fill="url(#heroGradient)"/>
+    <text x="80" y="245" fill="#ffffff" font-family="sans-serif" font-weight="700" font-size="11" text-anchor="middle">View Portfolio →</text>
+
+    <!-- Hero Illustration / 3D Card on right -->
+    <rect x="420" y="95" width="235" height="170" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
+    <rect x="435" y="110" width="205" height="100" rx="10" fill="url(#heroGradient)" opacity="0.85"/>
+    <circle cx="537" cy="160" r="28" fill="#ffffff" opacity="0.3"/>
+    <polygon points="533,148 548,160 533,172" fill="#ffffff"/>
+    <rect x="435" y="222" width="130" height="12" rx="4" fill="#e2e8f0"/>
+    <rect x="435" y="240" width="80" height="10" rx="4" fill="#cbd5e1"/>
+
+    <!-- Bottom 3 Feature Cards -->
+    <rect x="25" y="285" width="195" height="105" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="45" cy="310" r="12" fill="#dbeafe"/>
+    <text x="45" y="314" fill="#2563eb" font-family="sans-serif" font-weight="800" font-size="12" text-anchor="middle">⚡</text>
+    <text x="65" y="314" fill="#0f172a" font-family="sans-serif" font-weight="700" font-size="11">Mobile First</text>
+    <text x="35" y="340" fill="#64748b" font-family="sans-serif" font-size="10">Pixel-perfect layout across</text>
+    <text x="35" y="356" fill="#64748b" font-family="sans-serif" font-size="10">smartphones & tablets.</text>
+
+    <rect x="242" y="285" width="195" height="105" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="262" cy="310" r="12" fill="#fef3c7"/>
+    <text x="262" y="314" fill="#d97706" font-family="sans-serif" font-weight="800" font-size="12" text-anchor="middle">🎨</text>
+    <text x="282" y="314" fill="#0f172a" font-family="sans-serif" font-weight="700" font-size="11">Clean Aesthetics</text>
+    <text x="252" y="340" fill="#64748b" font-family="sans-serif" font-size="10">Modern color harmonies</text>
+    <text x="252" y="356" fill="#64748b" font-family="sans-serif" font-size="10">and glassmorphic cards.</text>
+
+    <rect x="460" y="285" width="195" height="105" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+    <circle cx="480" cy="310" r="12" fill="#dcfce7"/>
+    <text x="480" y="314" fill="#15803d" font-family="sans-serif" font-weight="800" font-size="12" text-anchor="middle">🚀</text>
+    <text x="500" y="314" fill="#0f172a" font-family="sans-serif" font-weight="700" font-size="11">High Performance</text>
+    <text x="470" y="340" fill="#64748b" font-family="sans-serif" font-size="10">Lightning fast loading</text>
+    <text x="470" y="356" fill="#64748b" font-family="sans-serif" font-size="10">and 100/100 Lighthouse score.</text>
+  </g>
+</svg>
