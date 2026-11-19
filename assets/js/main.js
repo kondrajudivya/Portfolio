@@ -76,6 +76,16 @@ document.addEventListener('DOMContentLoaded', () => {
       tools: ['Meta Business Suite', 'Canva Graphics', 'Content Calendar', 'Hashtag Matrix'],
       deliverables: ['30-Day Content Plan', '15 Reel Scripts', 'Carousel Graphic Templates'],
       metrics: '1.2M+ Total Impressions • +18.4K Followers'
+    },
+    'mkt-2': {
+      title: 'Sri Lakshmi Narasimha Swamy Tiffins — Grand Opening Campaign',
+      category: 'Digital Marketing',
+      badge: 'Client Campaign',
+      image: 'assets/images/projects/marketing-tiffins.jpg',
+      desc: 'Designed and executed the festive grand opening promotional campaign creative for Sri Lakshmi Narasimha Swamy Tiffins located at 18th Main, Maruthi Nagar, Bangalore. The campaign highlighted pure vegetarian South Indian breakfast specialties (Crispy Dosa, Steaming Idli, Vada, Bonda, Chapathi), integrated direct telephone booking CTAs (98866 77345), and drove strong launch footfall across local WhatsApp community groups.',
+      tools: ['Canva Pro', 'Photoshop Food Retouching', 'Social Media Ad Design', 'Local Promotion Strategy'],
+      deliverables: ['Grand Opening Master Poster', 'WhatsApp Broadcast Creatives', 'Instagram Promo Post', 'Local Ad Copy'],
+      metrics: 'High Launch Footfall • 25+ Local Community Groups Shared'
     }
   };
 

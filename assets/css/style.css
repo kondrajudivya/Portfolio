@@ -1339,6 +1339,11 @@ button {
     grid-template-columns: 1fr !important;
     gap: 30px !important;
   }
+  .marketing-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    padding: 24px !important;
+  }
   .spotlight-card {
     grid-template-columns: 1fr !important;
     gap: 24px !important;
