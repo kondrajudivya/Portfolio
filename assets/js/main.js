@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       metrics: '10x Faster Production • 80% Cost Reduction'
     },
     'saanvi-kitchen': {
-      title: "Sanvi Kitchens — Restaurant & WhatsApp Ordering Platform",
+      title: "Saanvi's Kitchen — Restaurant & WhatsApp Ordering Platform",
       category: 'Website Design',
       badge: 'Live Website',
       image: 'assets/images/projects/project-saanvi.svg',
