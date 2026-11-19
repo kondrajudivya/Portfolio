@@ -77,6 +77,16 @@ document.addEventListener('DOMContentLoaded', () => {
       deliverables: ['30-Day Content Plan', '15 Reel Scripts', 'Carousel Graphic Templates'],
       metrics: '1.2M+ Total Impressions • +18.4K Followers'
     },
+    'satyabama-studio': {
+      title: 'Satyabama Studio — 3D Cinematic Brand Identity & Logo Design',
+      category: 'Digital Marketing',
+      badge: 'Brand Identity',
+      image: 'assets/images/projects/branding-satyabama.jpg',
+      desc: 'Crafted a bespoke luxury 3D cinematic brand identity and embossed insignia for Satyabama Studio. Built with royal crown accents, dynamic golden filmstrip wrapping, vintage cinema projector camera, and metallic relief typography optimized for film production title cards, YouTube channel branding, and high-impact digital marketing assets.',
+      tools: ['3D Modeling & Lighting', 'Photoshop Master', 'Canva Pro', 'Brand Identity Design'],
+      deliverables: ['Ultra-HD 4K Master Insignia', 'Social Media Profile & Banner Kits', 'Video Title Card Overlay', 'Transparent PNG & Print Assets'],
+      metrics: '3D Gold Foil Emboss • 4K Resolution Master • Luxury Entertainment Branding'
+    },
     'mkt-2': {
       title: 'Sri Lakshmi Narasimha Swamy Tiffins — Grand Opening Campaign',
       category: 'Digital Marketing',
