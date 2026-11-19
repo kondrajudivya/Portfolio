@@ -1335,6 +1335,11 @@ button {
 
 /* Responsive Media Queries */
 @media (max-width: 1024px) {
+  .spotlight-card {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    padding: 24px !important;
+  }
   .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
